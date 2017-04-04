@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NativeAdObject Class Reference</title>
+    <title>AdNomusNativeObject Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/NativeAdObject" class="dashAnchor"></a>
-    <a title="NativeAdObject Class Reference"></a>
+    <a name="//apple_ref/swift/Class/AdNomusNativeObject" class="dashAnchor"></a>
+    <a title="AdNomusNativeObject Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        NativeAdObject Class Reference
+        AdNomusNativeObject Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -31,31 +31,22 @@
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/AdConstants.html">AdConstants</a>
+                <a href="../Classes/AdNomusConstants.html">AdNomusConstants</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/AdConstants/AdSize.html">– AdSize</a>
+                <a href="../Classes/AdNomusConstants/AdSize.html">– AdSize</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/AdConstants/Kind.html">– Kind</a>
+                <a href="../Classes/AdNomusConstants/AdKind.html">– AdKind</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/AdConstants.html#/s:VC11AdNomusTest11AdConstants6Native">– Native</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/AdConstants.html#/s:VC11AdNomusTest11AdConstants2Js">– Js</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/AdConstants.html#/s:VC11AdNomusTest11AdConstants5Debug">– Debug</a>
+                <a href="../Classes/AdNomusContextObject.html">AdNomusContextObject</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/AdNomusControl.html">AdNomusControl</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/ContextObject.html">ContextObject</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/NativeAdObject.html">NativeAdObject</a>
+                <a href="../Classes/AdNomusNativeObject.html">AdNomusNativeObject</a>
               </li>
             </ul>
           </li>
@@ -75,8 +66,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>NativeAdObject</h1>
-            <p>Undocumented</p>
+            <h1>AdNomusNativeObject</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusNativeObject</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A class which parse the response object to the native object request</p>
 
           </section>
           <section class="section task-group-section">
@@ -92,9 +89,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC11AdNomusTest14NativeAdObject15reportAdClickedFT_T_"></a>
+                    <a name="/s:FC11AdNomusTest19AdNomusNativeObject15reportAdClickedFT_T_"></a>
                     <a name="//apple_ref/swift/Method/reportAdClicked()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC11AdNomusTest14NativeAdObject15reportAdClickedFT_T_">reportAdClicked()</a>
+                    <a class="token" href="#/s:FC11AdNomusTest19AdNomusNativeObject15reportAdClickedFT_T_">reportAdClicked()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -102,8 +99,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>It reports the user engagement (such as click on) for a native ad.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">reportAdClicked</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -111,9 +116,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC11AdNomusTest14NativeAdObject13reportAdShownFT_T_"></a>
+                    <a name="/s:FC11AdNomusTest19AdNomusNativeObject13reportAdShownFT_T_"></a>
                     <a name="//apple_ref/swift/Method/reportAdShown()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC11AdNomusTest14NativeAdObject13reportAdShownFT_T_">reportAdShown()</a>
+                    <a class="token" href="#/s:FC11AdNomusTest19AdNomusNativeObject13reportAdShownFT_T_">reportAdShown()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>It reports the impression of a native ad.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">reportAdShown</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC11AdNomusTest19AdNomusNativeObject11descriptionSS"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC11AdNomusTest19AdNomusNativeObject11descriptionSS">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -124,24 +156,13 @@
                         <p>Undocumented</p>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:vC11AdNomusTest14NativeAdObject11descriptionSS"></a>
-                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC11AdNomusTest14NativeAdObject11descriptionSS">description</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusNativeObject</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -151,7 +172,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-04-03)</p>
+          <p>&copy; 2017 <a class="link" href="http://www.adnomus.com" target="_blank" rel="external">adNomus</a>. All rights reserved. (Last updated: 2017-04-29)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

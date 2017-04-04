@@ -31,28 +31,22 @@
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/AdConstants.html">AdConstants</a>
+                <a href="../Classes/AdNomusConstants.html">AdNomusConstants</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/AdConstants/AdSize.html">– AdSize</a>
+                <a href="../Classes/AdNomusConstants/AdSize.html">– AdSize</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/AdConstants/Kind.html">– Kind</a>
+                <a href="../Classes/AdNomusConstants/AdKind.html">– AdKind</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/AdConstants.html#/s:VC13AdNomusHelper11AdConstants6Native">– Native</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/AdConstants.html#/s:VC13AdNomusHelper11AdConstants5Debug">– Debug</a>
+                <a href="../Classes/AdNomusContextObject.html">AdNomusContextObject</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/AdNomusControl.html">AdNomusControl</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/ContextObject.html">ContextObject</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/NativeAdObject.html">NativeAdObject</a>
+                <a href="../Classes/AdNomusNativeObject.html">AdNomusNativeObject</a>
               </li>
             </ul>
           </li>
@@ -79,7 +73,7 @@
 
                 </div>
               </div>
-            <p>A singleton, service class to manage the adNomus SDK.</p>
+            <p>A service class to manage the adNomus SDK.</p>
 
           </section>
           <section class="section task-group-section">
@@ -88,9 +82,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:ZvC13AdNomusHelper14AdNomusControl14sharedInstanceS0_"></a>
+                    <a name="/s:ZvC11AdNomusTest14AdNomusControl14sharedInstanceS0_"></a>
                     <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZvC13AdNomusHelper14AdNomusControl14sharedInstanceS0_">sharedInstance</a>
+                    <a class="token" href="#/s:ZvC11AdNomusTest14AdNomusControl14sharedInstanceS0_">sharedInstance</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -98,14 +92,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The singleton instance of the class.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">sharedInstance</span> <span class="o">=</span> <span class="kt">AdNomusControl</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -115,9 +109,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl10initializeFTSS13networkSecretSS8viewerIdSS_T_"></a>
-                    <a name="//apple_ref/swift/Method/initialize(_:networkSecret:viewerId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl10initializeFTSS13networkSecretSS8viewerIdSS_T_">initialize(_:networkSecret:viewerId:)</a>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl10initializeFT11networkNameSS13networkSecretSS8viewerIdSS_T_"></a>
+                    <a name="//apple_ref/swift/Method/initialize(networkName:networkSecret:viewerId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl10initializeFT11networkNameSS13networkSecretSS8viewerIdSS_T_">initialize(networkName:networkSecret:viewerId:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -132,7 +126,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">_</span> <span class="nv">networkName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">networkSecret</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">viewerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">initialize</span><span class="p">(</span><span class="nv">networkName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">networkSecret</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">viewerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -148,7 +142,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Name of the network</p>
+                                  <p>Name of the network.</p>
 
                                 </div>
                               </td>
@@ -161,7 +155,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Network secret key</p>
+                                  <p>Network secret key.</p>
 
                                 </div>
                               </td>
@@ -174,7 +168,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>ID of the viewer</p>
+                                  <p>ID of the viewer.</p>
 
                                 </div>
                               </td>
@@ -188,9 +182,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl6setAgeFSiT_"></a>
-                    <a name="//apple_ref/swift/Method/setAge(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl6setAgeFSiT_">setAge(_:)</a>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl15standardWebViewFT7contentSS5frameVSC6CGRect6adSizeOCS_16AdNomusConstants6AdSize6adKindOS2_6AdKind_CSo9WKWebView"></a>
+                    <a name="//apple_ref/swift/Method/standardWebView(content:frame:adSize:adKind:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl15standardWebViewFT7contentSS5frameVSC6CGRect6adSizeOCS_16AdNomusConstants6AdSize6adKindOS2_6AdKind_CSo9WKWebView">standardWebView(content:frame:adSize:adKind:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -198,16 +192,80 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>It requests an ad of standard format and manages ad rendering and reporing</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">standardWebView</span><span class="p">(</span><span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">adSize</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdSize</span><span class="p">,</span> <span class="nv">adKind</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdKind</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">WKWebView</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The input content that adNomus will use for content analysis.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The frame where to show the ad.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdSize. This should match the size of the webview window the native sdk uses for rendering.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adKind</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdKind except of native. We should default to ‘auto’.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>WebView with the fetched ad.</p>
+
                       </div>
                     </section>
                   </div>
@@ -215,9 +273,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl14setNationalityFSST_"></a>
-                    <a name="//apple_ref/swift/Method/setNationality(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl14setNationalityFSST_">setNationality(_:)</a>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl15standardWebViewFT7contextSS5frameVSC6CGRect6adSizeOCS_16AdNomusConstants6AdSize6adKindOS2_6AdKind_CSo9WKWebView"></a>
+                    <a name="//apple_ref/swift/Method/standardWebView(context:frame:adSize:adKind:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl15standardWebViewFT7contextSS5frameVSC6CGRect6adSizeOCS_16AdNomusConstants6AdSize6adKindOS2_6AdKind_CSo9WKWebView">standardWebView(context:frame:adSize:adKind:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -225,16 +283,80 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>It requests an ad of standard format and manages ad rendering and reporing</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">standardWebView</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">adSize</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdSize</span><span class="p">,</span> <span class="nv">adKind</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdKind</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">WKWebView</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A context string which identifies the context information for ad delivery.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The frame where to show the ad.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdSize. This should match the size of the webview window the native sdk uses for rendering.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adKind</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdKind except of native. We should default to ‘auto’.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>WebView with the fetched ad.</p>
+
                       </div>
                     </section>
                   </div>
@@ -242,9 +364,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl9setGenderFSST_"></a>
-                    <a name="//apple_ref/swift/Method/setGender(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl9setGenderFSST_">setGender(_:)</a>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl15standardWebViewFT10contentURLV10Foundation3URL5frameVSC6CGRect6adSizeOCS_16AdNomusConstants6AdSize6adKindOS4_6AdKind_CSo9WKWebView"></a>
+                    <a name="//apple_ref/swift/Method/standardWebView(contentURL:frame:adSize:adKind:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl15standardWebViewFT10contentURLV10Foundation3URL5frameVSC6CGRect6adSizeOCS_16AdNomusConstants6AdSize6adKindOS4_6AdKind_CSo9WKWebView">standardWebView(contentURL:frame:adSize:adKind:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -252,16 +374,80 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>It requests an ad of standard format and manages ad rendering and reporing</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">standardWebView</span><span class="p">(</span><span class="nv">contentURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">adSize</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdSize</span><span class="p">,</span> <span class="nv">adKind</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdKind</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">WKWebView</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A public url that gives access to the content AdNomus will use for content analysis. content analysis.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The frame where to show the ad.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdSize. This should match the size of the webview window the native sdk uses for rendering.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adKind</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdKind except of native. We should default to ‘auto’.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>WebView with the fetched ad.</p>
+
                       </div>
                     </section>
                   </div>
@@ -269,9 +455,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl15standardWebViewFT11withContentSS5frameVSC6CGRect6adsizeOCS_11AdConstants6AdSize4typeOS2_4Kind_CSo9WKWebView"></a>
-                    <a name="//apple_ref/swift/Method/standardWebView(withContent:frame:adsize:type:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl15standardWebViewFT11withContentSS5frameVSC6CGRect6adsizeOCS_11AdConstants6AdSize4typeOS2_4Kind_CSo9WKWebView">standardWebView(withContent:frame:adsize:type:)</a>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl8nativeAdFT7contentSS6adSizeOCS_16AdNomusConstants6AdSize6adKindOS1_6AdKind14nativeDelegatePS_21AdNomusNativeDelegate__T_"></a>
+                    <a name="//apple_ref/swift/Method/nativeAd(content:adSize:adKind:nativeDelegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl8nativeAdFT7contentSS6adSizeOCS_16AdNomusConstants6AdSize6adKindOS1_6AdKind14nativeDelegatePS_21AdNomusNativeDelegate__T_">nativeAd(content:adSize:adKind:nativeDelegate:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -279,16 +465,75 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>It requests of a native format. The delegate provides the handling for the AdNomusNativeObject</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">nativeAd</span><span class="p">(</span><span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">adSize</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdSize</span><span class="p">,</span> <span class="nv">adKind</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdKind</span><span class="p">,</span> <span class="nv">nativeDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdNomusNativeDelegate.html">AdNomusNativeDelegate</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The input content that adNomus will use for content analysis.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdSize. This should match the size of the webview window the native sdk uses for rendering.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adKind</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdKind except of native. We should default to ‘native’.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nativeDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The delegate method to call to handle the response. If the request succeed, it returns a AdNomusNativeObject.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -296,9 +541,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl15standardWebViewFT11withContextSS5frameVSC6CGRect6adsizeOCS_11AdConstants6AdSize4typeOS2_4Kind_CSo9WKWebView"></a>
-                    <a name="//apple_ref/swift/Method/standardWebView(withContext:frame:adsize:type:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl15standardWebViewFT11withContextSS5frameVSC6CGRect6adsizeOCS_11AdConstants6AdSize4typeOS2_4Kind_CSo9WKWebView">standardWebView(withContext:frame:adsize:type:)</a>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl8nativeAdFT7contextSS6adSizeOCS_16AdNomusConstants6AdSize6adKindOS1_6AdKind14nativeDelegatePS_21AdNomusNativeDelegate__T_"></a>
+                    <a name="//apple_ref/swift/Method/nativeAd(context:adSize:adKind:nativeDelegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl8nativeAdFT7contextSS6adSizeOCS_16AdNomusConstants6AdSize6adKindOS1_6AdKind14nativeDelegatePS_21AdNomusNativeDelegate__T_">nativeAd(context:adSize:adKind:nativeDelegate:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -306,16 +551,75 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>It requests of a native format. The delegate provides the handling for the AdNomusNativeObject</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">nativeAd</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">adSize</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdSize</span><span class="p">,</span> <span class="nv">adKind</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdKind</span><span class="p">,</span> <span class="nv">nativeDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdNomusNativeDelegate.html">AdNomusNativeDelegate</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string which provides the context information for ad delivery.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdSize. This should match the size of the webview window the native sdk uses for rendering.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adKind</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdKind except of native. We should default to ‘native’.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nativeDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The delegate method to call to handle the response. If the request succeed, it returns a AdNomusNativeObject.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -323,9 +627,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl15standardWebViewFT14withContentURLV10Foundation3URL5frameVSC6CGRect6adsizeOCS_11AdConstants6AdSize4typeOS4_4Kind_CSo9WKWebView"></a>
-                    <a name="//apple_ref/swift/Method/standardWebView(withContentURL:frame:adsize:type:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl15standardWebViewFT14withContentURLV10Foundation3URL5frameVSC6CGRect6adsizeOCS_11AdConstants6AdSize4typeOS4_4Kind_CSo9WKWebView">standardWebView(withContentURL:frame:adsize:type:)</a>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl8nativeAdFT10contentURLV10Foundation3URL6adSizeOCS_16AdNomusConstants6AdSize6adKindOS3_6AdKind14nativeDelegatePS_21AdNomusNativeDelegate__T_"></a>
+                    <a name="//apple_ref/swift/Method/nativeAd(contentURL:adSize:adKind:nativeDelegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl8nativeAdFT10contentURLV10Foundation3URL6adSizeOCS_16AdNomusConstants6AdSize6adKindOS3_6AdKind14nativeDelegatePS_21AdNomusNativeDelegate__T_">nativeAd(contentURL:adSize:adKind:nativeDelegate:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -333,16 +637,75 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>It requests of a native format. The delegate provides the handling for the AdNomusNativeObject</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">nativeAd</span><span class="p">(</span><span class="nv">contentURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">adSize</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdSize</span><span class="p">,</span> <span class="nv">adKind</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdNomusConstants.html">AdNomusConstants</a></span><span class="o">.</span><span class="kt">AdKind</span><span class="p">,</span> <span class="nv">nativeDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdNomusNativeDelegate.html">AdNomusNativeDelegate</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A public url that gives access to the content AdNomus will use for content analysis. content analysis.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdSize. This should match the size of the webview window the native sdk uses for rendering.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adKind</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be one of the AdKind except of native. We should default to ‘native’.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nativeDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The delegate method to call to handle the response. If the request succeed, it returns a AdNomusNativeObject.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -350,9 +713,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl8nativeAdFT11withContentSS6adsizeOCS_11AdConstants6AdSize4typeOS1_4Kind14nativeDelegatePS_21AdNomusNativeDelegate__T_"></a>
-                    <a name="//apple_ref/swift/Method/nativeAd(withContent:adsize:type:nativeDelegate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl8nativeAdFT11withContentSS6adsizeOCS_11AdConstants6AdSize4typeOS1_4Kind14nativeDelegatePS_21AdNomusNativeDelegate__T_">nativeAd(withContent:adsize:type:nativeDelegate:)</a>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl9adContextFT7contentSS15contextDelegatePS_22AdNomusContextDelegate__T_"></a>
+                    <a name="//apple_ref/swift/Method/adContext(content:contextDelegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl9adContextFT7contentSS15contextDelegatePS_22AdNomusContextDelegate__T_">adContext(content:contextDelegate:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -360,16 +723,62 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>It creates a new advert context for future use. A delegate method provides the new context id.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">adContext</span><span class="p">(</span><span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">contextDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdNomusContextDelegate.html">AdNomusContextDelegate</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The input content that adNomus will use for content analysis.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The WKWebViewConfiguration object where the ad is rendered</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contextDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A delegate which handle the response from the server. It If the request succeed, it returns a AdNomusContextObject.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -377,9 +786,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl8nativeAdFT11withContextSS6adsizeOCS_11AdConstants6AdSize4typeOS1_4Kind14nativeDelegatePS_21AdNomusNativeDelegate__T_"></a>
-                    <a name="//apple_ref/swift/Method/nativeAd(withContext:adsize:type:nativeDelegate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl8nativeAdFT11withContextSS6adsizeOCS_11AdConstants6AdSize4typeOS1_4Kind14nativeDelegatePS_21AdNomusNativeDelegate__T_">nativeAd(withContext:adsize:type:nativeDelegate:)</a>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl9adContextFT10contentURLV10Foundation3URL15contextDelegatePS_22AdNomusContextDelegate__T_"></a>
+                    <a name="//apple_ref/swift/Method/adContext(contentURL:contextDelegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl9adContextFT10contentURLV10Foundation3URL15contextDelegatePS_22AdNomusContextDelegate__T_">adContext(contentURL:contextDelegate:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -387,16 +796,62 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>It creates a new advert context for future use. A delegate method provides the new context id.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">adContext</span><span class="p">(</span><span class="nv">contentURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">contextDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AdNomusContextDelegate.html">AdNomusContextDelegate</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A public url that gives access to the content AdNomus will use for content analysis. content analysis.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The WKWebViewConfiguration object where the ad is rendered</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contextDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A delegate which handle the response from the server. It If the request succeed, it returns a AdNomusContextObject.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -404,90 +859,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl8nativeAdFT14withContentURLV10Foundation3URL6adsizeOCS_11AdConstants6AdSize4typeOS3_4Kind14nativeDelegatePS_21AdNomusNativeDelegate__T_"></a>
-                    <a name="//apple_ref/swift/Method/nativeAd(withContentURL:adsize:type:nativeDelegate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl8nativeAdFT14withContentURLV10Foundation3URL6adsizeOCS_11AdConstants6AdSize4typeOS3_4Kind14nativeDelegatePS_21AdNomusNativeDelegate__T_">nativeAd(withContentURL:adsize:type:nativeDelegate:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl9adContextFT11fromContentSS15contextDelegatePS_22AdNomusContextDelegate__T_"></a>
-                    <a name="//apple_ref/swift/Method/adContext(fromContent:contextDelegate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl9adContextFT11fromContentSS15contextDelegatePS_22AdNomusContextDelegate__T_">adContext(fromContent:contextDelegate:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl9adContextFT14fromContentURLV10Foundation3URL15contextDelegatePS_22AdNomusContextDelegate__T_"></a>
-                    <a name="//apple_ref/swift/Method/adContext(fromContentURL:contextDelegate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl9adContextFT14fromContentURLV10Foundation3URL15contextDelegatePS_22AdNomusContextDelegate__T_">adContext(fromContentURL:contextDelegate:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC13AdNomusHelper14AdNomusControl8logLevelFT5levelSi_T_"></a>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl8logLevelFT5levelSi_T_"></a>
                     <a name="//apple_ref/swift/Method/logLevel(level:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC13AdNomusHelper14AdNomusControl8logLevelFT5levelSi_T_">logLevel(level:)</a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl8logLevelFT5levelSi_T_">logLevel(level:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -495,16 +869,36 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A debug functionality which allow to display errors and warnings on the console. </p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdNomusControl</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">logLevel</span><span class="p">(</span><span class="nv">level</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>level</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An integer number which specify the amount of information to print out: 0 - critical,  1 - warning, 2 - info, 3 - verbose</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -512,9 +906,150 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC13AdNomusHelper14AdNomusControl11descriptionSS"></a>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl9updateAgeFT3ageSi_T_"></a>
+                    <a name="//apple_ref/swift/Method/updateAge(age:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl9updateAgeFT3ageSi_T_">updateAge(age:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>It update/create the info about the viewer&rsquo;s age, used for targetization and analytics. This method needs to be called only once.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateAge</span><span class="p">(</span><span class="nv">age</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>age</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An integer number describing the age</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl17updateNationalityFT11nationalitySS_T_"></a>
+                    <a name="//apple_ref/swift/Method/updateNationality(nationality:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl17updateNationalityFT11nationalitySS_T_">updateNationality(nationality:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>It update/create the info about the viewer&rsquo;s nationality, used for targetization and analytics. This method needs to be called only once.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateNationality</span><span class="p">(</span><span class="nv">nationality</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>age</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string describing the nationality</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11AdNomusTest14AdNomusControl12updateGenderFT6genderSS_T_"></a>
+                    <a name="//apple_ref/swift/Method/updateGender(gender:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11AdNomusTest14AdNomusControl12updateGenderFT6genderSS_T_">updateGender(gender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>It update/create the info about the viewer&rsquo;s gender, used for targetization and analytics. This method needs to be called only once.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateGender</span><span class="p">(</span><span class="nv">gender</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>age</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string describing the gender</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC11AdNomusTest14AdNomusControl11descriptionSS"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC13AdNomusHelper14AdNomusControl11descriptionSS">description</a>
+                    <a class="token" href="#/s:vC11AdNomusTest14AdNomusControl11descriptionSS">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -541,7 +1076,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-04-03)</p>
+          <p>&copy; 2017 <a class="link" href="http://www.adnomus.com" target="_blank" rel="external">adNomus</a>. All rights reserved. (Last updated: 2017-04-29)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
